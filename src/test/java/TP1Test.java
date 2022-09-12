@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class TP1 {
+public class TP1Test {
     @Test //Annotation
     public void test1() {
         System.out.println("Test Daisy");

@@ -1,3 +1,5 @@
+package amazon;
+
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +12,8 @@ public class HomePage {
     private WebDriver driver;
     private By acceptCookieSelector = By.cssSelector("[data-cel-widget=sp-cc-accept]");
     private By searchWithButtonSelector = By.cssSelector("[aria-label=Rechercher]");
+    private By searchButtonSelector = By.cssSelector("[type=submit]");
+
 
     private final int TIMEOUT_COOKIE = 6;
 
@@ -26,5 +30,8 @@ public class HomePage {
     public void searchWithButton(String keyboard){
         WebElement searchBar = driver.findElement(searchWithButtonSelector);
         searchBar.sendKeys(keyboard);
+        WebElement searchButton = driver.findElement(searchButtonSelector);
+        searchButton.click();
+
     }
 }
