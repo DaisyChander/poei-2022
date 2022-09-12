@@ -27,7 +27,7 @@ public class TpPageObject {
 
     }
 
-    @Test
+   /* @Test
     public void testPO() {
         // arrange
         final String keyword = "iPhone 13";
@@ -43,7 +43,7 @@ public class TpPageObject {
 
         // assert
         Assert.assertEquals(cartPage.getSubTotal(), "1000");
-    }
+    }*/
 
     @Test
     public void test2() {
