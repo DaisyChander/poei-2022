@@ -1,7 +1,8 @@
-import amazon.CartPage;
-import amazon.HomePage;
-import commun.SetupTeardown;
+package test.java;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+import main.java.amazon.HomePage;
+import main.java.commun.SetupTeardown;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

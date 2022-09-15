@@ -1,18 +1,16 @@
-import amazon.CartPage;
-import amazon.HomePage;
-import commun.SetupTeardown;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+package test.java;
+
+
+
+import main.java.amazon.CartPage;
+import main.java.amazon.HomePage;
+
+import main.java.commun.SetupTeardown;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.Test;
 
-import java.net.MalformedURLException;
+
 
 public class TpPageObjectTest extends SetupTeardown {
 

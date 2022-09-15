@@ -1,4 +1,4 @@
-package amazon;
+package main.java.amazon;
 
 import java.time.Duration;
 
@@ -35,7 +35,7 @@ public class HomePage {
         return this;
     }
 
-    public amazon.SearchResultPage searchWithButton(String keyword) {
+    public SearchResultPage searchWithButton(String keyword) {
 
         Log.info("Je cherche avec le bouton de recherche");
         WebElement searchBar = driver.findElement(searchBarSelector);
@@ -44,6 +44,6 @@ public class HomePage {
         WebElement loupeButton = driver.findElement(searchButtonSelector);
         loupeButton.click();
 
-        return new amazon.SearchResultPage(driver);
+        return new SearchResultPage(driver);
     }
 }

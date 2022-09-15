@@ -1,4 +1,4 @@
-package commun;
+package main.java.commun;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ public class SetupTeardown {
 
     public WebDriver driver;
 
-    String browser = "edge";
+    String browser = "chrome";
 
     @BeforeMethod
     public void setup() throws MalformedURLException {
