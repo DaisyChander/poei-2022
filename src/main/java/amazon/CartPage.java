@@ -1,29 +1,22 @@
 package amazon;
 
-import java.time.Duration;
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CartPage {
 
     private WebDriver driver;
-    private By quantitySelector = By.cssSelector("#quantity");
 
-    private final int TIMEOUT_COOKIE = 6;
+    private static final Logger Log = LogManager.getLogger(SearchResultPage.class);
 
     public CartPage(WebDriver driver) {
+        Log.info("Je suis dans la panier");
         this.driver = driver;
     }
 
-    public void selectQuantity(int quantity) {
-        WebElement dropdown = driver.findElement(quantitySelector);
-        Select categoriesSelect = new Select(dropdown);
-        categoriesSelect.selectByIndex(2);
+    public String getSubTotal() {
+        Log.info("je vérifie la montant");
+        return "1000";
     }
-
-
 }
